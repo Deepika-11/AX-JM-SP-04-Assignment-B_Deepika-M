@@ -1,0 +1,84 @@
+{
+	"id": "8a3451c7-0ee3-43d1-b545-598751378658",
+	"name": "ProductManagementSystemWithoutDB",
+	"timestamp": "2022-09-22T17:47:02.634Z",
+	"collection_id": "15859719-5546ab9a-ff00-4bff-90d0-4c10b6603f1e",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "2627bc80-f696-4df9-ab49-26d05f02fb43",
+			"name": "GetAllProductDetails",
+			"url": "http://localhost:8090/products/get/all",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ef26da42-bb66-412a-830b-afaea243c7ba",
+			"name": "GetProductDetailById",
+			"url": "http://localhost:8090/products/get/id/1",
+			"time": 11,
+			"responseCode": {
+				"code": 302,
+				"name": "Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				11
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d8084603-a643-49d5-8ae6-a4d0b66b3752",
+			"name": "SaveProductDetail",
+			"url": "http://localhost:8090/products/save",
+			"time": 7,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 24,
+	"collection": {
+		"requests": [
+			{
+				"id": "2627bc80-f696-4df9-ab49-26d05f02fb43",
+				"method": "GET"
+			},
+			{
+				"id": "ef26da42-bb66-412a-830b-afaea243c7ba",
+				"method": "GET"
+			},
+			{
+				"id": "d8084603-a643-49d5-8ae6-a4d0b66b3752",
+				"method": "POST"
+			}
+		]
+	}
+}
